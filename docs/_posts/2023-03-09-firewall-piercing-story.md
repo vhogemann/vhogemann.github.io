@@ -27,9 +27,9 @@ A solução óbvia seria pedir para que eles permitissem o acesso ao servidor de
 
 Uma solução criativa
 ---
-O que nós precisávamos fazer estava claro: compartilhar uma única conexão de rede entre várias máquinas. A solução óbvia seria usar um servidor proxy que o CVS pudesse acessar.
+O que nós precisávamos fazer estava claro: compartilhar uma única conexão de rede entre várias máquinas. Existem algumas formas de fazer isso, mas nós acabamos por escolher uma que talvez não fosse a mais intuitiva: usar um proxy SOCKS.
 
-Existem diversos tipos de proxy, o mais comum é o proxy HTTP, que é usado pra fazer cache de páginas web. Mas o tipo que nós precisávamos era o proxy SOCKS, que é usado pra fazer proxy de conexões TCP. O proxy SOCKS é um protocolo muito simples, e é usado por diversos programas, como o SSH, o BitTorrent e o CVS.
+Existem diversos tipos de proxy, o mais comum é o proxy HTTP, que é usado pra fazer cache de páginas web. Mas o tipo que nós precisávamos era o proxy SOCKS, que é usado pra fazer proxy de conexões TCP, então suporta praticamente qualquer protocolo.
 
 Então o primeiro passo foi instalar um proxy SOCKS na máquina que tinha acesso a VPN. Mas só isso não seria suficiente, já que essa VPN só permitia acesso via RDP.
 
