@@ -3,6 +3,7 @@ layout: post
 title:  "Rinha de Backend 2024 - F#"
 tags: portuguese fsharp dotnet
 categories: hacking fsharp
+image: /assets/rinha-2024-q1/image.png
 ---
 
 A [Rinha de Backend](https://github.com/zanfranceschi/rinha-de-backend-2024-q1) é um evento organizado pelo [Francisco Zanfrancheschi](https://linktr.ee/zanfranceschi). As regras são simples, você precisa criar uma API rodando em docker compose, seguindo a arquitetura mínima pedida, e que sobreviva a um teste de carga previamente escrito.

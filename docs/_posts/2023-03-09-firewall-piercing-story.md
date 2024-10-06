@@ -3,6 +3,7 @@ layout: post
 title:  "Uma história sobre firewall piercing"
 tags: portuguese
 categories: hacking story
+image: /assets/20230306162208.png
 ---
 
 ![Screenshot](/assets/20230306162208.png)
