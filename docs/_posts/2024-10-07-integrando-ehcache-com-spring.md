@@ -2,13 +2,13 @@
 layout: post
 title:  "Integrando cache ao Spring com EHCache"
 tags: portuguese java spring ehcache
-image: /assets/spring-ehcache.png
+image: /assets/spring-cache.png
 ---
 
 > Esse é um artigo que eu escrevi em 2011, algumas coisas já estão desatualizadas,
 > mas o conteúdo ainda pode ser útil.
 
-![Spring com EHCache](/assets/spring-ehcache.png)
+![Spring com EHCache](/assets/spring-cache.png)
 
 # Integrando cache ao Spring
 
