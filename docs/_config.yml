@@ -24,7 +24,6 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: vhogemann
 github_username:  vhogemann
 linkedin_username: vhogemann
-bluesky_username: victor.hogemann.com
 
 mastodon:
   - username: vhogemann
