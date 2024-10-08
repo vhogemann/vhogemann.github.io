@@ -205,7 +205,7 @@ Nesse exemplo, vamos simular uma operação que deu certo e retorna um `Result` 
 ```java
 public class Example {
     public static void main(String[] args) {
-        Result<String> successResult = Result.ok("Operação deu bom");
+        Result<String> successResult = Result.ok("Operação deu certo");
 
         successResult.ifOkOrElse(
             value -> System.out.println("Sucesso: " + value),
