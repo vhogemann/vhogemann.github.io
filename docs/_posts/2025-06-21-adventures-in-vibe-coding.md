@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Adventures in Vibe Coding"
-date:  2023-01-19 09:45:47 +0000
+date:  2025-06-21 12:00:00 +0000
 categories: llm vibe-coding 
 image: /assets/Adventures_in_Vibe_Coding.jpg
 ---
