@@ -260,6 +260,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  jekyll (~> 3.9.2)
   jekyll-feed (~> 0.6)
   jekyll-watch (~> 2.2)
   kramdown-parser-gfm
