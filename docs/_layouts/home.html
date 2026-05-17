@@ -1,0 +1,40 @@
+---
+layout: default
+---
+<section class="home-layout">
+  <div class="tui-window white-168 black-255-text page-intro">
+    <fieldset class="tui-fieldset">
+      <legend>Posts</legend>
+      <p>Tech notes, experiments, and stories.</p>
+    </fieldset>
+  </div>
+
+  {%- if content and content != '' -%}
+    <article class="tui-window site-content-window">
+      <fieldset class="tui-fieldset">
+        <legend>Overview</legend>
+        <div class="content-body">
+          {{ content }}
+        </div>
+      </fieldset>
+    </article>
+  {%- endif -%}
+
+  <div class="post-grid">
+    {%- for post in site.posts -%}
+      <article class="tui-window post-card">
+        <fieldset class="tui-fieldset">
+          <legend>{{ post.date | date: '%Y-%m-%d' }}</legend>
+          {%- if post.image -%}
+            <a href="{{ post.url | relative_url }}" class="card-image-link">
+              <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="card-image">
+            </a>
+          {%- endif -%}
+          <h2 class="card-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+          <p class="card-excerpt">{{ post.excerpt | strip_html | truncate: 220 }}</p>
+          <a class="tui-button cyan-168 black-255-text" href="{{ post.url | relative_url }}">Read</a>
+        </fieldset>
+      </article>
+    {%- endfor -%}
+  </div>
+</section>

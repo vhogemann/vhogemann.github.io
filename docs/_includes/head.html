@@ -1,0 +1,10 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{%- assign page_title = page.title | default: site.title -%}
+{%- assign meta_description = page.excerpt | default: site.description | strip_html | strip_newlines | truncate: 160 -%}
+<title>{{ page_title }} | {{ site.title }}</title>
+<meta name="description" content="{{ meta_description }}">
+<link rel="stylesheet" href="{{ '/assets/vendor/tuicss/tuicss.min.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/site-theme.css' | relative_url }}">
+<link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ '/feed.xml' | relative_url }}">

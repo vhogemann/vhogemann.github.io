@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+  <head>
+    {% include head.html %}
+  </head>
+  <body class="tui-bg-blue-black">
+    {% include header.html %}
+    <main class="site-shell">
+      {{ content }}
+    </main>
+    {% include footer.html %}
+    <script src="{{ '/assets/vendor/tuicss/tuicss.min.js' | relative_url }}" defer></script>
+  </body>
+</html>

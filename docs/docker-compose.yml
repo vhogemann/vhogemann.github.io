@@ -1,0 +1,34 @@
+services:
+  jekyll:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: vhogemann-jekyll:local
+    working_dir: /srv/jekyll
+    command:
+      - jekyll
+      - serve
+      - --host
+      - 0.0.0.0
+      - --port
+      - "4000"
+      - --livereload
+      - --force_polling
+    ports:
+      - "4000:4000"
+    volumes:
+      - .:/srv/jekyll
+
+  jekyll-build:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: vhogemann-jekyll:local
+    working_dir: /srv/jekyll
+    command:
+      - jekyll
+      - build
+    volumes:
+      - .:/srv/jekyll
+    profiles:
+      - build

@@ -1,0 +1,19 @@
+<header class="site-header">
+  <nav class="tui-nav site-nav">
+    <ul>
+      <li><a href="{{ '/' | relative_url }}">Home</a></li>
+      <li><a href="{{ '/about/' | relative_url }}">About</a></li>
+      <li><a href="{{ '/feed.xml' | relative_url }}">Feed</a></li>
+      <li class="hide-on-small-and-down"><a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener">GitHub</a></li>
+    </ul>
+  </nav>
+
+  <div class="site-banner">
+    <div class="tui-window cyan-168 black-255-text site-banner-window">
+      <fieldset class="tui-fieldset">
+        <legend class="site-brand">{{ site.title }}</legend>
+        <p class="site-description">{{ site.description }}</p>
+      </fieldset>
+    </div>
+  </div>
+</header>

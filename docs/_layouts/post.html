@@ -1,0 +1,32 @@
+---
+layout: default
+---
+<article class="tui-window post-window">
+  <fieldset class="tui-fieldset">
+    <legend>{{ page.title }}</legend>
+
+    <div class="post-meta-line">
+      <span>{{ page.date | date: '%B %-d, %Y' }}</span>
+      {%- if page.categories and page.categories.size > 0 -%}
+        <span class="meta-separator">|</span>
+        <span>{{ page.categories | join: ', ' }}</span>
+      {%- endif -%}
+    </div>
+
+    {%- if page.tags and page.tags.size > 0 -%}
+      <ul class="tag-list">
+        {%- for tag in page.tags -%}
+          <li class="tag-chip">#{{ tag }}</li>
+        {%- endfor -%}
+      </ul>
+    {%- endif -%}
+
+    <!-- {%- if page.image -%}
+      <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="hero-image">
+    {%- endif -%} -->
+
+    <div class="content-body post-content">
+      {{ content }}
+    </div>
+  </fieldset>
+</article>
