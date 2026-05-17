@@ -1,0 +1,23 @@
+<footer class="site-footer-wrap">
+  <div class="tui-window white-168 black-255-text site-footer">
+    <fieldset class="tui-fieldset">
+      <legend>Links</legend>
+      <ul class="footer-links">
+        {%- if site.github_username -%}
+          <li><a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener">GitHub</a></li>
+        {%- endif -%}
+        {%- if site.twitter_username -%}
+          <li><a href="https://twitter.com/{{ site.twitter_username }}" target="_blank" rel="noopener">Twitter/X</a></li>
+        {%- endif -%}
+        {%- if site.linkedin_username -%}
+          <li><a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank" rel="noopener">LinkedIn</a></li>
+        {%- endif -%}
+        {%- if site.mastodon and site.mastodon.size > 0 -%}
+          {%- assign first_mastodon = site.mastodon | first -%}
+          <li><a href="https://{{ first_mastodon.instance }}/@{{ first_mastodon.username }}" rel="me noopener" target="_blank">Mastodon</a></li>
+        {%- endif -%}
+      </ul>
+      <p class="footer-copy">{{ site.title }} | {{ 'now' | date: '%Y' }}</p>
+    </fieldset>
+  </div>
+</footer>
